@@ -1,4 +1,28 @@
-layouts_custom_prueba:
-  default: ""
+layouts_custom_title_1:
+  default: "Need help or want to share something?"
   description:
-    en: "Prueba"
+    en: "Title for the first block"
+layouts_custom_description_1:
+  default: "Don’t be shy and ask the community!"
+  description:
+    en: "Description for the first block"
+layouts_custom_button_text_1:
+  default: "Create a new post"
+  description:
+    en: "Text for the new topic button in the first block"
+layouts_custom_title_2:
+  default: "Any suggestions for improvements?"
+  description:
+    en: "Title for the second block"
+layouts_custom_description_2:
+  default: "Tell us any ideas, suggestions or possible ways to improve this community."
+  description:
+    en: "Description for the second block"
+layouts_custom_link_text_2:
+  default: "Give us your feedback"
+  description:
+    en: "Text for the link in the second block"
+layouts_custom_link_url_2:
+  default: "/c/site-feedback/2"
+  description:
+    en: "Url for the link in the second block (Change this for the Suggestions category of yor country"

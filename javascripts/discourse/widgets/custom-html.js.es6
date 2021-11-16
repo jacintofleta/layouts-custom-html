@@ -22,7 +22,13 @@ export default layouts.createLayoutsWidget("custom-html", {
 
   html(attrs, state) {
     if (!state.renderScheduled) {
-      let prueba = settings.layouts_custom_prueba;
+      let title_1 = settings.layouts_custom_title_1;
+      let description_1 = settings.layouts_custom_description_1;
+      let button_text_1 = settings.layouts_custom_button_text_1;
+      let title_2 = settings.layouts_custom_title_2;
+      let description_2 = settings.layouts_custom_description_2;
+      let link_text_2 = settings.layouts_custom_link_text_2;
+      let link_url_2 = settings.layouts_custom_link_url_2;
 
       const category = attrs.category;
       if (category && category.layouts_custom_html) {
@@ -31,16 +37,16 @@ export default layouts.createLayoutsWidget("custom-html", {
 
       scheduleOnce("afterRender", this, function () {
         $("div.layouts-custom-html").append(
-          `<div class='contents'><h3 style="margin-top: 42px;">${prueba}</h3>
-          <p>Don’t be shy and ask the community!</p>
+          `<div class='contents'><h3 style="margin-top: 42px;">${title_1}</h3>
+          <p>${description_1}</p>
           <a href="/new-topic" style="color: #ffffff">
-          <button aria-label="Themes" id="ember190" class="themes-tab tab btn-radical active btn full btn-text ember-view" type="button"><span class="d-button-label">Create new topic</span>
+          <button aria-label="Themes" id="ember190" class="themes-tab tab btn-radical active btn full btn-text ember-view" type="button"><span class="d-button-label">${button_text_1}</span>
           </button>
           </a>
           
-          <h3 style="margin-top: 56px;">Any suggestions for improvements?</h3>
-          <p>Tell us any ideas, suggestions or possible ways to improve this community.</p>
-          <a href="/c/sugerencias-sobre-el-sitio/2">Give us your feedback</a></div>`
+          <h3 style="margin-top: 56px;">${title_2}</h3>
+          <p>${description_2}</p>
+          <a href="${link_url_2}">${link_text_2}</a></div>`
         );
       });
       state.renderScheduled = true;
