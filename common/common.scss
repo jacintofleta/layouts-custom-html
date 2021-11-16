@@ -1,9 +1,13 @@
 .arrow_link {
   display: flex;
+  align-items: baseline;
   .arrow_svg {
     background-image: url($arrow_link);
     width: 16px;
     height: 14px;
     margin-left: 16px;
+    &:hover {
+      transform: translate(10px, 0px);
+    }
   }
 }
