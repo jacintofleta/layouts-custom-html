@@ -1,7 +1,3 @@
 .arrow_link {
   display: flex;
-
-  &:after {
-    content: url($arrow_link);
-  }
 }
