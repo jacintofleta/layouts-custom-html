@@ -3,8 +3,8 @@
   "about_url": null,
   "license_url": null,
   "assets": {
+    "arrow_link": "assets/arrow_link.svg"
   },
-  "color_schemes": {
-  },
+  "color_schemes": {},
   "component": true
 }
