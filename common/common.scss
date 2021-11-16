@@ -4,9 +4,6 @@
     background-image: url($arrow_link);
     width: 16px;
     height: 14px;
-
-    &:hover {
-      transform: translate(10px, 0px);
-    }
+    margin-left: 16px;
   }
 }
