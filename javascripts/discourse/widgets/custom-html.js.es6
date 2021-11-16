@@ -22,7 +22,6 @@ export default layouts.createLayoutsWidget("custom-html", {
 
   html(attrs, state) {
     if (!state.renderScheduled) {
-      let html = settings.layouts_custom_html;
       let prueba = settings.layouts_custom_prueba;
 
       const category = attrs.category;
@@ -32,7 +31,16 @@ export default layouts.createLayoutsWidget("custom-html", {
 
       scheduleOnce("afterRender", this, function () {
         $("div.layouts-custom-html").append(
-          `<div class='contents'>${html}</div>`
+          `<div class='contents'><h3 style="margin-top: 42px;">${prueba}</h3>
+          <p>Don’t be shy and ask the community!</p>
+          <a href="/new-topic" style="color: #ffffff">
+          <button aria-label="Themes" id="ember190" class="themes-tab tab btn-radical active btn full btn-text ember-view" type="button"><span class="d-button-label">Create new topic</span>
+          </button>
+          </a>
+          
+          <h3 style="margin-top: 56px;">Any suggestions for improvements?</h3>
+          <p>Tell us any ideas, suggestions or possible ways to improve this community.</p>
+          <a href="/c/sugerencias-sobre-el-sitio/2">Give us your feedback</a></div>`
         );
       });
       state.renderScheduled = true;
