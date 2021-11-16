@@ -46,7 +46,7 @@ export default layouts.createLayoutsWidget("custom-html", {
           
           <h3 style="margin-top: 56px;">${title_2}</h3>
           <p>${description_2}</p>
-          <a href="${link_url_2}">${link_text_2}</a><div class="arrow_link"></div></div>`
+          <a style="display:flex;" href="${link_url_2}">${link_text_2} <div class="arrow_link"></div></a></div>`
         );
       });
       state.renderScheduled = true;
