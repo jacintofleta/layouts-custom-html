@@ -1,6 +1,7 @@
 .arrow_link {
-  background-image: url($arrow_link);
-  background-size: 100% 100%;
-  width: 16px;
-  height: 14px;
+  display: flex;
+
+  &:after {
+    content: $arrow_link;
+  }
 }
