@@ -2,6 +2,6 @@
   display: flex;
 
   &:after {
-    content: $arrow_link;
+    content: url($arrow_link);
   }
 }
