@@ -1,5 +1,9 @@
 layouts_custom_html:
-  default: ''
+  default: ""
   textarea: true
   description:
     en: "Html for custom html widget"
+layouts_custom_prueba:
+  default: ""
+  description:
+    en: "Prueba"
